@@ -264,6 +264,7 @@ def pretty_datetime(month_started:str, year_started:str, month_ended:str, year_e
     """
 
     
+    beginning = ""
     if month_started or year_started:
         if month_started and year_started:
             beginning = f"{month_started} {year_started}"

@@ -76,6 +76,10 @@
 								<li><a href="#experience">Experience</a></li>
 								{% endif %}
 
+								{% if skills_html %}
+								<li><a href="#skills">Skills</a></li>
+								{% endif %}
+
 								{% if projects_html %}
 								<li><a href="#projects">Projects</a></li>
 								{% endif %}
@@ -107,6 +111,13 @@
 								{{ volunteering_experience_html | safe }}
 							</article>
 						<!-- End of experience section -->
+
+						<!-- Start of skills section -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								{{ skills_html | safe }}
+							</article>
+						<!-- End of skills section -->
 
 						<!-- Start of projects section -->
 							<article id="projects">

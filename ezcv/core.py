@@ -53,7 +53,7 @@ import jinja2                       # used as middlewear for generating template
 from tqdm import tqdm               # Used to generate progress bars during iteration
 
 # The global list of currently supported first party sections
-SECTIONS_LIST = ["projects", "education", "work_experience", "volunteering_experience", "gallery"]
+SECTIONS_LIST = ["projects", "education", "work_experience", "volunteering_experience", "gallery", "skills"]
 
 def get_site_config(config_file_path:str = "config.yml", remotes_file_path:str = os.path.join(THEMES_FOLDER, "remotes.yml")) -> defaultdict:
     """Gets the site config from provided file path and returns defaultdict of values
