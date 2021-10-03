@@ -86,7 +86,7 @@ def get_section_content(section_content_folder: str, examples: bool = False) -> 
     content:List[List[Union[defaultdict, str]]] = []
     extension_handlers:DefaultDict[str, Type] = Content.get_available_extensions()
 
-    for file_name in os.listdir(section_content_folder):                   # Iterate through the section_content folder and get the content from each file
+    for file_name in sorted(os.listdir(section_content_folder), reverse=True):                   # Iterate through the section_content folder and get the content from each file
         if not examples and file_name.startswith("example"):
             continue
         else:
